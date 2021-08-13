@@ -26,4 +26,13 @@ public class MyDriver {
 		  byte[] fileContent = FileUtils.readFileToByteArray(screenshot);
 		  scenario.attach(fileContent, "image/png", scenario.getName());
 	}
+	public static String getMethodName() {
+
+	    // Verficamos que exista
+	    if (Thread.currentThread().getStackTrace().length>2) {
+	        return "Step: "+Thread.currentThread().getStackTrace()[2].getMethodName();
+	    } else {
+	        return "undefined";
+	    }
+	}
 }

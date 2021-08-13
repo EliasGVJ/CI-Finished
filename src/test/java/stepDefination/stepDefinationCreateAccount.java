@@ -27,15 +27,18 @@ public WebDriver driver;
 LoginPage loginPage;
 HomePage homePage;
 
+
     @Given("^Initialize the browser with chrome$")
     public void initialize_the_browser_with_chrome() throws Throwable {
+    	System.out.println("---\tInitialize Create an accout test\t\t\t---");
+    	System.out.println(getMethodName());
     	driver = initializeDriver();
-    
     }
     
 
     @When("^the user typing his email \"([^\"]*)\"$")
     public void the_user_provide_his_email_something(String email) throws Throwable {
+    	System.out.println(getMethodName());
     	loginPage = new LoginPage(driver);
     	loginPage.putEmail(email);
     	
@@ -44,21 +47,25 @@ HomePage homePage;
 
     @And("^verify if the account will be creat successfully$")
     public void verify_if_the_account_will_be_creat_successfully() throws Throwable {
+    	System.out.println(getMethodName());
     	loginPage.validateSigInCorrectly();
     }
 
     @And("^Navigate to \"([^\"]*)\"$")
     public void navigate_to_something(String url) throws Throwable {
+    	System.out.println(getMethodName());
     	driver.get(url);
     }
 
     @And("^Click on Sign in$")
     public void click_on_sign_in() throws Throwable {
+    	System.out.println(getMethodName());
     	homePage = new HomePage(driver);
     	homePage.goToSignIn();
     }
     @And("^fill the data$")
     public void fill_the_data() throws Throwable {
+    	System.out.println(getMethodName());
 
     	loginPage.filledData();
     }
@@ -66,19 +73,22 @@ HomePage homePage;
 
     @Then("^click on create an account$")
     public void click_on_create_an_account() throws Throwable {
+    	System.out.println(getMethodName());
     	loginPage.clickCreateAccount();
     }
 
     @After
     public void closeBrowser() throws InterruptedException {
+    	System.out.println(getMethodName());
     	Thread.sleep(3000L);
     	driver.close();
     }
     @AfterStep
 	public void addScreenshot(Scenario scenario) throws IOException, InterruptedException {
     	if(scenario.isFailed()) {
+        	System.out.println("--FAILURE-- "+getMethodName());
 		  getScreenShot(scenario);
     	}
-		
+
 	}
 }
