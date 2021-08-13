@@ -31,12 +31,14 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">36.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">4</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">146.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">cucumberOptions.TestRunner</td><td><a href="#m1"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">1</td><td>1628881006010</td><td class="numi">33917</td></tr>
+<tr class="failedodd"><td rowspan="4">cucumberOptions.TestRunner</td><td><a href="#m1"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">1</td><td>1628885321380</td><td class="numi">27557</td></tr><tr class="failedodd"><td><a href="#m2"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">1</td><td>1628885321380</td><td class="numi">27557</td></tr><tr class="failedodd"><td><a href="#m3"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">1</td><td>1628885321380</td><td class="numi">27557</td></tr><tr class="failedodd"><td><a href="#m4"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">1</td><td>1628885321380</td><td class="numi">27557</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="4">cucumberOptions.TestRunner</td><td><a href="#m5"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1628885348939</td><td class="numi">115684</td></tr><tr class="passedodd"><td><a href="#m6"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1628885348939</td><td class="numi">115684</td></tr><tr class="passedodd"><td><a href="#m7"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1628885348939</td><td class="numi">115684</td></tr><tr class="passedodd"><td><a href="#m8"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">3</td><td>1628885348939</td><td class="numi">115684</td></tr>
 </table>
 <h1>Test</h1>
 <h2 id="m1">cucumberOptions.TestRunner:runScenario</h2>
@@ -59,8 +61,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-NOC952OA&apos;, ip: &apos;192.168.100.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102336~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62012}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a2f8b8f04c375fa5a33a150a1f7c39c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102336~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f4802f8357c088e299688f67e1a8e069
 *** Element info: {Using=css selector, value=#id_gender1}</p>
 java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -128,6 +130,30 @@ java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native
 <br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 <br/>1 lines not shown
 </td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>&quot;Login with a valid account&quot;</td>
+<td>&quot;Optional[Login with an account]&quot;</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>&quot;validate sign off from an active session account&quot;</td>
+<td>&quot;Optional[Sign off from the session]&quot;</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">cucumberOptions.TestRunner:runScenario</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>&quot;validate the shopping process till the end&quot;</td>
+<td>&quot;Optional[follow the shopping process]&quot;</td>
+</tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

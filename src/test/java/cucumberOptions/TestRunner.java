@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions(
-		features= "src/test/java/features",
+		features= "src/test/java/features/CreateAccount.feature",
 		glue="stepDefination",
 		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 		monochrome = true
