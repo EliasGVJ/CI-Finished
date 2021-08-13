@@ -78,10 +78,9 @@ HomePage homePage;
     }
 
     @After
-    public void closeBrowser() throws InterruptedException {
+    public void close_browser() throws InterruptedException {
     	System.out.println(getMethodName());
-    	Thread.sleep(3000L);
-    	driver.close();
+    	closeBrowser(driver);
     }
     @AfterStep
 	public void addScreenshot(Scenario scenario) throws IOException, InterruptedException {
