@@ -77,11 +77,7 @@ HomePage homePage;
     	loginPage.clickCreateAccount();
     }
 
-    @After
-    public void close_browser() throws InterruptedException {
-    	System.out.println(getMethodName());
-    	closeBrowser(driver);
-    }
+
     @AfterStep
 	public void addScreenshot(Scenario scenario) throws IOException, InterruptedException {
     	if(scenario.isFailed()) {

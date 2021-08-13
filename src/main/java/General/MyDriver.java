@@ -35,8 +35,5 @@ public class MyDriver {
 	        return "undefined";
 	    }
 	}
-	public void closeBrowser(WebDriver driver) throws InterruptedException {
-    	Thread.sleep(8000L);
-    	driver.close();
-	}
+
 }
