@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import General.MyDriver;
 import Pages.HomePage;
 import Pages.LoginPage;
+import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
@@ -68,6 +69,11 @@ HomePage homePage;
     	loginPage.clickCreateAccount();
     }
 
+    @After
+    public void closeBrowser() throws InterruptedException {
+    	Thread.sleep(3000L);
+    	driver.close();
+    }
     @AfterStep
 	public void addScreenshot(Scenario scenario) throws IOException, InterruptedException {
     	if(scenario.isFailed()) {

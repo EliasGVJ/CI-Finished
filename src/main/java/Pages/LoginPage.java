@@ -89,7 +89,7 @@ public class LoginPage {
 		
 	}
 	public void filledData() {
-		WebDriverWait wait = new WebDriverWait(driver,5);///se pasa sel driver y los segundos maximos a esperar
+		WebDriverWait wait = new WebDriverWait(driver,10);///se pasa sel driver y los segundos maximos a esperar
 		WebElement dropDown;
 		wait.until(ExpectedConditions.visibilityOfElementLocated(title));// espera hasta que se avisible el boton de codigo
 		Assert.assertTrue(driver.findElement(title).isDisplayed());
